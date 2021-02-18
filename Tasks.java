@@ -8,7 +8,7 @@ public class Tasks {
         System.out.println("Введите число: ");
             int a = console.nextInt();
             if (a > 0) {
-                a++;
+                a = a + 1;
                 System.out.println("1. = " + a);
             } else if (a < 0) {
                 a = a + 2;
