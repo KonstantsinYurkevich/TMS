@@ -1,8 +1,9 @@
 package animal.classess;
 
 public class animal {
-    protected String name;
-    protected int age;
+    public String name;
+    public int age;
+
     public animal(String newName, int newAge) {
         name = newName;
         age = newAge;
@@ -12,6 +13,15 @@ public class animal {
             this.age = 0;
         }
     }
+
+    public animal(String newName) {
+        this.name = newName;
+    }
+
+    public animal(int newAge) {
+        this.age = newAge;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

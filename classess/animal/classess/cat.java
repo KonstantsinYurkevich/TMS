@@ -1,13 +1,11 @@
 package animal.classess;
 
-public class cat {
-    protected String name;
-    protected  int age;
-    protected  String catchingMouse;
-    protected  String instPage;
+public class cat extends animal {
+    public String catchingMouse;
+    public String instPage;
 
     public cat(String newName, int newAge, String newCatchingMouse, String newInstPage) {
-        name = newName;
+        super(newName, newAge);
         if (age > 0) {
             this.age = newAge;
         } else {
@@ -45,15 +43,17 @@ public class cat {
         this.instPage = instPage;
     }
 
-    public  void setAge(int age) {
+    public void setAge(int age) {
         if (age > 0) {
             this.age = age;
         } else {
             this.age = 0;
         }
     }
-    public  void print (){
+
+    public void print() {
         System.out.print("Moew" + "\nИмя кота : " + name + "\nВозраст : " + age + "\nЛовит ли мышей : " + catchingMouse
-        + "\nСтраница в Inastagram : " + instPage);
+                + "\nСтраница в Inastagram : " + instPage);
     }
 }
+
