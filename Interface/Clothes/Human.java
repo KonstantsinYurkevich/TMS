@@ -9,7 +9,9 @@ public class Human implements IHuman{
     public IFootwear footwear;
     public IJacket jacket;
     public ITrousers trousers;
-    public Human (IFootwear footwear,IJacket jacket,ITrousers trousers){
+    public String humanname;
+    public Human (String humanname,IFootwear footwear,IJacket jacket,ITrousers trousers){
+        this.humanname=humanname;
         this.footwear=footwear;
         this.jacket=jacket;
         this.trousers=trousers;

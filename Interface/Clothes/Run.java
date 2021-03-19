@@ -23,13 +23,13 @@ public class Run {
         FlipTrousers flip = new FlipTrousers();
         CareerTrousers career = new CareerTrousers();
         PumaTrousers puma = new PumaTrousers();
-        Human h1 = new Human(ecco, columbia, flip);
+        Human h1 = new Human("sasha",ecco, columbia, flip);
         h1.takeOn();
         h1.takeOff();
-        Human h2 = new Human(marko, fila, career);
+        Human h2 = new Human("Masha",marko, fila, career);
         h2.takeOn();
         h2.takeOff();
-        Human h3 = new Human(scetchers, kappa, puma);
+        Human h3 = new Human("Miahs ",scetchers, kappa, puma);
         h3.takeOn();
         h3.takeOff();
 
